@@ -23,31 +23,31 @@ SELECT * FROM FILM;
 
 SELECT * FROM CUSTOMER;
 
--- You need to provide customer firstname, lastname and email id to the marketing team --
+-- Provide customers' first names, last names, and email addresses to the marketing team.--
 
 SELECT first_name,last_name,email
 FROM CUSTOMER;
 
--- How many movies are with rental rate of $0.99? --
+-- Determine the number of movies with a rental rate of $0.99.--
 
 SELECT count(*) as CHEAPEST_RENTALS
 FROM film
 WHERE rental_rate = 0.99;
 
--- We want to see rental rate and how many movies are in each rental category --
+-- Analyze the rental rates and determine the number of movies in each rental category.--
 
 select rental_rate,count(*) as total_numb_of_movies
 from film
 group by rental_rate;
 
--- Which rating categories has the most films? --
+-- Find the rating category with the most films --
 
 SELECT RATING,COUNT(*) AS RATING_CATEGORY_COUNT
 FROM FILM
 GROUP BY RATING
 ORDER BY RATING_CATEGORY_COUNT DESC;
 
--- Which rating is most prevalant in each store? --
+-- Find the most prevalent rating in each store --
 
 SELECT I.store_id,F.rating,COUNT(F.rating) AS TOTAL_FILMS
 FROM inventory AS I LEFT JOIN
@@ -56,7 +56,8 @@ ON I.film_id = F.film_id
 GROUP BY I.store_id,F.rating
 ORDER BY TOTAL_FILMS DESC;
 
--- List of films by Film Name, Category, Language --
+-- List of films with their Name, Category, and Language--
+
 SELECT F.TITLE, LANG.NAME AS LANGUAGE_NAME,C.NAME AS CATEGORY_NAME
 FROM FILM AS F LEFT JOIN LANGUAGE AS LANG
 ON F.LANGUAGE_ID = LANG.LANGUAGE_ID
@@ -65,8 +66,8 @@ ON F.FILM_ID = FC.FILM_ID
 LEFT JOIN CATEGORY AS C
 ON FC.CATEGORY_ID = C.CATEGORY_ID;
 
+--  Count how many times each movie has been rented --
 
--- How many times each movie has been rented out?--
 SELECT film.title,count(rental.rental_id) as POPULARITY
 FROM rental LEFT JOIN inventory
 			ON RENTAL.inventory_id = inventory.inventory_id
@@ -75,7 +76,8 @@ FROM rental LEFT JOIN inventory
 GROUP BY film.title
 ORDER BY POPULARITY DESC;
 
--- Revenue per film(TOP 10 FILMS) --
+-- Top 10 films by revenue --
+
 SELECT RENTAL_ID_TRANSACTIONS.TITLE,sum(P.AMOUNT) AS GROSS_REVENUE
 FROM(SELECT R.RENTAL_ID,F.FILM_ID,F.TITLE
 FROM RENTAL AS R LEFT JOIN INVENTORY AS INV
@@ -88,7 +90,8 @@ GROUP BY RENTAL_ID_TRANSACTIONS.TITLE
 ORDER BY GROSS_REVENUE DESC
 LIMIT 10;
 
--- MOST SPENDING CUSTOMER --
+-- Customer with the highest spending --
+
 SELECT payment.customer_id,customer.first_name,customer.last_name,SUM(payment.amount) AS TOTAL_SPENDS
 FROM PAYMENT LEFT JOIN customer
              ON PAYMENT.customer_id = customer.customer_id
@@ -97,6 +100,7 @@ ORDER BY TOTAL_SPENDS DESC
 LIMIT 1;
 
 -- Which store has brought the most revenue --
+
 SELECT S.STORE_ID,SUM(P.AMOUNT) AS STORE_REVENUE
 FROM PAYMENT AS P LEFT JOIN STAFF AS S
              ON P.STAFF_ID = S.STAFF_ID
@@ -104,12 +108,13 @@ GROUP BY S.STORE_ID
 ORDER BY STORE_REVENUE DESC;
 
 -- How many rentals do we have for each month --
+
 SELECT monthname(RENTAL_DATE) AS MONTH_NAME,extract(YEAR FROM RENTAL_DATE) AS YEAR_NUMBER,COUNT(rental_id) AS NUMBER_RENTALS
 FROM rental
 GROUP BY EXTRACT(YEAR FROM RENTAL_DATE),MONTHNAME(RENTAL_DATE)
 ORDER BY NUMBER_RENTALS DESC;
 
--- Reward users who have rented out at least 30 times (With details of customer phone & email_id) --
+-- Identify and reward customers who have rented a minimum of 30 times, including their phone number and email ID --
 
 SELECT CUSTOMER_ID,COUNT(RENTAL_ID) AS NUMBER_OF_RENTALS
 FROM RENTAL
@@ -127,14 +132,10 @@ ORDER BY CUSTOMER_ID) as LOYAL_CUSTOMERS LEFT JOIN CUSTOMER AS C
       LEFT JOIN ADDRESS AS AD
       ON C.ADDRESS_ID = AD.ADDRESS_ID;
 
-
-
-
-
 SELECT DISTINCT RENTAL_DURATION
 FROM FILM;
 
--- Could you pull all payments from our first 100 customers (based on customer ID)
+-- Retrieve all payment records for the first 100 customers, ordered by customer ID --
 
 SELECT 
     CUSTOMER_ID, RENTAL_ID, AMOUNT, PAYMENT_DATE
@@ -143,7 +144,7 @@ FROM
 WHERE
     CUSTOMER_ID < 101;
 
--- Now I’d love to see just payments over $5 for those same customers, since January 1, 2006
+-- Retrieve payment records over $5 for the first 100 customers (ordered by customer ID), since January 1, 2006--
 
 SELECT 
     CUSTOMER_ID, RENTAL_ID, AMOUNT, PAYMENT_DATE
@@ -153,8 +154,7 @@ WHERE
     CUSTOMER_ID < 101 AND AMOUNT > 5
         AND PAYMENT_DATE > '2006-01-01';
 
--- Now, could you please write a query to pull all payments from those specific customers, along
--- with payments over $5, from any customer?
+-- Retrieve all payment records from the first 100 customers, along with payments over $5 from any customer--
 
 SELECT 
     CUSTOMER_ID, RENTAL_ID, AMOUNT, PAYMENT_DATE
@@ -174,9 +174,7 @@ WHERE
     AMOUNT > 5
         AND CUSTOMER_ID IN (42 , 53, 60, 75);
 
-
--- We need to understand the special features in our films. Could you pull a list of films which
--- include a Behind the Scenes special feature?
+-- Retrieve a list of films that include a 'Behind the Scenes' special feature --
 
 SELECT 
     TITLE, SPECIAL_FEATURES
@@ -186,7 +184,7 @@ WHERE
     SPECIAL_FEATURES LIKE '%Behind the Scenes%';
 
 
--- unique movie ratings and number of movies
+-- Retrieve unique movie ratings along with the count of movies for each rating --
 
 SELECT 
     RATING, COUNT(FILM_ID) AS NUMBER_OF_FILMS
@@ -194,7 +192,7 @@ FROM
     FILM
 GROUP BY RATING;
 
--- Could you please pull a count of titles sliced by rental duration?
+-- Retrieve a count of titles, grouped by rental duration--
 
 SELECT 
     RENTAL_DURATION, COUNT(FILM_ID) AS NUMBER_OF_FILMS
@@ -209,7 +207,7 @@ FROM
     FILM
 GROUP BY RATING , RENTAL_DURATION;
 
--- RATING, COUNT_MOVIES,LENGTH OF MOVIES AND COMPARE WITH RENTAL DURATION
+-- Retrieve movie ratings, the count of movies for each rating, average movie length, and compare with rental duration --
 
 SELECT RATING,
 	COUNT(FILM_ID)  AS COUNT_OF_FILMS,
@@ -221,11 +219,7 @@ FROM FILM
 GROUP BY RATING
 ORDER BY AVERAGE_FILM_LENGTH;
 
-
--- I’m wondering if we charge more for a rental when the replacement cost is higher.
--- Can you help me pull a count of films, along with the average, min, and max rental rate,
--- grouped by replacement cost?
-
+-- Retrieve the count of films, along with the average, minimum, and maximum rental rates, grouped by replacement cost --
 
 SELECT REPLACEMENT_COST,
 	COUNT(FILM_ID) AS NUMBER_OF_FILMS,
