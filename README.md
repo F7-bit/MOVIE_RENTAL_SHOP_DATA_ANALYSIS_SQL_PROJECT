@@ -36,7 +36,7 @@ The database contains the following tables:
 
   ## Tools & Library Used
 
-[<img src="./Mysql_logo.png" alt="myql-logo" width="100"/>](https://www.mysql.com/) &nbsp;
+[<img src="Code_Output/Mysql_logo.png" width="100"/>](https://www.mysql.com/) &nbsp;
   
 
   
