@@ -1,7 +1,10 @@
--- DATA ANALYSIS PROJECT FOR RENTAL MOVIES BUSINESS
--- THE STEPS INVOLVED ARE EDA, UNDERSTANDING THR SCHEMA AND ANSWERING THE AD-HOC QUESTIONS
--- BUSINESS QUESTIONS LIKE EXPANDING MOVIES COLLECTION AND FETCHING EMAIL IDS FOR MARKETING ARE INCLUDED
--- HELPING COMPANY KEEP A TRACK OF INVENTORY AND HELP MANAGE IT.
+This project is designed to analyze the operations of a rental movies business, offering actionable insights to improve its performance. Key steps include:
+
+Exploratory Data Analysis (EDA): Understanding the database schema and exploring the data.
+Ad-Hoc Business Questions: Addressing critical questions, such as:
+Expanding the movie collection.
+Fetching customer emails for marketing campaigns.
+Tracking and managing inventory effectively.
 
 USE MAVENMOVIES;
 
