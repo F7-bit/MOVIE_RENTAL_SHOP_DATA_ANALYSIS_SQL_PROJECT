@@ -34,4 +34,10 @@ The database contains the following tables:
 
 * LANGUAGE: Languages available for films.
 
+  ## Tools & Library Used
+
+  
+
+  
+
 
