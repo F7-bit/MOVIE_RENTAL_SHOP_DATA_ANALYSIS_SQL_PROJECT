@@ -40,6 +40,8 @@ The database contains the following tables:
   
 ## Project Result
 
+CODE_MOVIE_RENTAL.sql
+
 
   
 
