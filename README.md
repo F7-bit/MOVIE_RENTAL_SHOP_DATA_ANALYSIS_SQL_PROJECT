@@ -40,7 +40,9 @@ The database contains the following tables:
   
 ## Project Result
 
-maven_movies_rental_CODE.sql
+https://github.com/F7-bit/MOVIE_RENTAL_SHOP_DATA_ANALYSIS_SQL_PROJECT/blob/main/CODE_MOVIE_RENTAL.sql
+
+
 
 
   
