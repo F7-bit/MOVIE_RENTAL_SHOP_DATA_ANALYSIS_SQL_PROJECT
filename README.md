@@ -40,7 +40,13 @@ The database contains the following tables:
   
 ## Project Result
 
-https://github.com/F7-bit/MOVIE_RENTAL_SHOP_DATA_ANALYSIS_SQL_PROJECT/blob/main/CODE_MOVIE_RENTAL.sql
+[Click here to get full code](https://github.com/F7-bit/MOVIE_RENTAL_SHOP_DATA_ANALYSIS_SQL_PROJECT/blob/main/CODE_MOVIE_RENTAL.sql)
+
+## Query Task
+
+1. How can we extract the first name, last name, and email address of all customers to prepare a comprehensive contact list for the marketing team?
+
+   
 
 
 
