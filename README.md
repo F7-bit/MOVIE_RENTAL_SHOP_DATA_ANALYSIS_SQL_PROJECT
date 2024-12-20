@@ -24,9 +24,15 @@ The database contains the following tables:
 
 * RENTAL: Records of movie rentals.
 
+  <img src="Code_Output/RENTAL TABLE.PNG" width="550" height="150"/>&nbsp;
+
 * INVENTORY: Inventory information for each store.
 
+  <img src="Code_Output/INVENTORY TABLE.PNG" width="550" height="150"/>&nbsp;
+
 * FILM: Movie details including title, rating, rental rate, and special features.
+
+  <img src="Code_Output/FILM TABLE.PNG" width="550" height="150"/>&nbsp;
 
 * FILM_CATEGORY: Categories associated with films.
 
