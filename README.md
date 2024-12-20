@@ -20,6 +20,8 @@ The database contains the following tables:
 
 * CUSTOMER: Customer details such as name, email, and activity status.
 
+  <img src="Code_Output/CUSTOMER TABLE.PNG" width="300"/>&nbsp;
+
 * RENTAL: Records of movie rentals.
 
 * INVENTORY: Inventory information for each store.
