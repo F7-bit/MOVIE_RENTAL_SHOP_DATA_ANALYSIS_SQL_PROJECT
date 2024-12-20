@@ -45,6 +45,7 @@ The database contains the following tables:
 ## Query Task
 
 1. How can we extract the first name, last name, and email address of all customers to prepare a comprehensive contact list for the marketing team?
+   [<img src="Code_Output/email ids.PNG" width="300"/>]&nbsp;
 
    
 
