@@ -20,7 +20,7 @@ The database contains the following tables:
 
 * CUSTOMER: Customer details such as name, email, and activity status.
 
-  <img src="Code_Output/CUSTOMER TABLE.PNG" width="500" height="200"/>&nbsp;
+  <img src="Code_Output/CUSTOMER TABLE.PNG" width="500" height="150"/>&nbsp;
 
 * RENTAL: Records of movie rentals.
 
