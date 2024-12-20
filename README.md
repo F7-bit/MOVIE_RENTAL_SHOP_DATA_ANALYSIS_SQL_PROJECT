@@ -28,7 +28,7 @@ The database contains the following tables:
 
 * INVENTORY: Inventory information for each store.
 
-  <img src="Code_Output/INVENTORY TABLE.PNG" width="550" height="150"/>&nbsp;
+  <img src="Code_Output/INVENTORY TABLE.PNG" width="550"/>&nbsp;
 
 * FILM: Movie details including title, rating, rental rate, and special features.
 
