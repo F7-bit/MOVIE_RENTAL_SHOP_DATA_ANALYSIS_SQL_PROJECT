@@ -46,7 +46,11 @@ The database contains the following tables:
 
 1. Extract the first name, last name, and email address of all customers to prepare a comprehensive contact list for the marketing team.
 
-<img src="Code_Output/email ids.PNG" width="400"/>&nbsp;
+ <img src="Code_Output/email ids.PNG" width="400"/>&nbsp;
+
+2. Determine the number of movies with a rental rate of $0.99.
+
+ 
 
    
 
