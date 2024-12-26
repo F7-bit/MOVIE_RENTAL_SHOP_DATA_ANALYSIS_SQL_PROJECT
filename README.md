@@ -64,6 +64,19 @@ The database contains the following tables:
 
  <img src="Code_Output/rental rate category.PNG" width="400" />&nbsp;
 
+3. Find the rating category with the most films.
+
+ <img src="Code_Output/RATING CATEGORY COUNT.PNG" width="400" />&nbsp;
+
+4. Find the most prevalent rating in each store.
+
+ <img src="Code_Output/RATING CATEGORY PER STORE.PNG" width="400" />&nbsp;
+
+5. List of films with their Name, Category, and Language.
+
+ <img src="Code_Output/TITLE_LANG_CATEGORY.PNG" width="400" />&nbsp;
+
+
    
 
  
