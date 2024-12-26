@@ -70,11 +70,11 @@ The database contains the following tables:
 
 4. Find the most prevalent rating in each store.
 
- <img src="Code_Output/RATING CATEGORY PER STORE.PNG" width="400" />&nbsp;
+ <img src="Code_Output/RATING CATEGORY PER STORE.PNG" width="400" "height=150" />&nbsp;
 
 5. List of films with their Name, Category, and Language.
 
- <img src="Code_Output/TITLE_LANG_CATEGORY.PNG" width="400" />&nbsp;
+<img src="Code_Output/TITLE_LANG_CATEGORY.PNG" width="400" "height=150" />&nbsp;
 
 
    
