@@ -18,6 +18,10 @@ This repository contains SQL scripts designed to analyze data from a rental movi
 
 The database contains the following tables:
 
+* ACTOR: Actor details such as first name, last name, actor id.
+
+  <img src="Code_Output/CUSTOMER TABLE.PNG" width="550" height="150"/>&nbsp; 
+
 * CUSTOMER: Customer details such as name, email, and activity status.
 
   <img src="Code_Output/CUSTOMER TABLE.PNG" width="550" height="150"/>&nbsp;
