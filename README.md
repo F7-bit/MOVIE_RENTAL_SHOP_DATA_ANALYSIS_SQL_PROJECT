@@ -76,6 +76,106 @@ The database contains the following tables:
 
 <img src="Code_Output/TITLE_LANG_CATEGORY.PNG" />&nbsp;
 
+6. Count how many times each movie has been rented.
+
+<img src="Code_Output/POPULARITY_MOST_RENTAL.PNG" />&nbsp;
+
+7. Top 10 films by revenue
+
+<img src="Code_Output/TOP 10 REVENUE.PNG" />&nbsp;
+
+8. Customer with the highest spending
+
+<img src="Code_Output/TOP 1 SPENDING CUST.PNG" />&nbsp;
+
+9. Which store has brought the most revenue
+
+<img src="Code_Output/PER STORE REVENUE.PNG" />&nbsp;
+
+10. How many rentals do we have for each month
+
+<img src="Code_Output/RENTALS_PER_MONTH.PNG" />&nbsp;
+
+11. Identify and reward customers who have rented a minimum of 30 times, including their phone number and email ID
+
+<img src="Code_Output/LOYAL_30_CUST_ALL_DESC.PNG" />&nbsp;
+
+12. Retrieve all payment records for the first 100 customers, ordered by customer ID
+
+<img src="Code_Output/FIRST_100_CUST.PNG" />&nbsp;
+
+13. Retrieve payment records over $5 for the first 100 customers (ordered by customer ID), since January 1, 2006
+
+<img src="Code_Output/OVER_$5_.PNG" />&nbsp;
+
+14. Retrieve all payment records from the first 100 customers, along with payments over $5 from any customer
+
+<img src="Code_Output/SPECIFIC_CUST.PNG" />&nbsp;
+
+15. Retrieve a list of films that include a 'Behind the Scenes' special feature
+
+<img src="Code_Output/SPECIAL_FEATURES.PNG" />&nbsp;
+
+16. Retrieve unique movie ratings along with the count of movies for each rating
+
+<img src="Code_Output/RATING_NOOF_MOVIES.PNG" />&nbsp;
+
+17. Retrieve a count of titles, grouped by rental duration
+
+<img src="Code_Output/RATING_RENTAL_SLICED_@.PNG" />&nbsp;
+
+18. Retrieve movie ratings, the count of movies for each rating, average movie length, and compare with rental duration
+
+<img src="Code_Output/RATING_COUNT_LENGTH.PNG" />&nbsp;
+
+19. Retrieve the count of films, along with the average, minimum, and maximum rental rates, grouped by replacement cost 
+
+<img src="Code_Output/REPLACEMENT_COST_IF.PNG" />&nbsp;
+
+20. Retrieve a list of customer IDs who have rented fewer than 15 times in total
+
+<img src="Code_Output/LESS_THAN_15_RENT.PNG" />&nbsp;
+
+21. Retrieve a list of all film titles, along with their lengths and rental rates, sorted from longest to shortest
+
+<img src="Code_Output/length&rentalprice.PNG" />&nbsp;
+
+22. Categorize movies as per length
+
+<img src="Code_Output/movies_length_bucket.PNG" />&nbsp;
+
+23. Categorize movies to recommend based on various age groups and demographics
+
+<img src="Code_Output/recomm_sys.PNG" />&nbsp;
+
+24. Retrieve a list of the first and last names of all customers, along with their store and activity status (e.g., 'store 1 active', 'store 1 inactive', 'store 2 active', or 'store 2 inactive')
+
+<img src="Code_Output/CUST_STORE_ACTIVITY.PNG" />&nbsp;
+
+25. Retrieve a list of all films in inventory, including the film title, description, associated store_id, and inventory_id
+
+<img src="Code_Output/FILM_INVENTORY.PNG" />&nbsp;
+
+26. Retrieve the first name, last name, and the count of movies for each actor
+
+<img src="Code_Output/ACTOR_NO_OF_FILMS.PNG" />&nbsp;
+
+27. Retrieve a list of all film titles, along with the count of actors associated with each title
+
+<img src="Code_Output/INVESTOR_REQUEST.PNG" />&nbsp;
+
+28. Retrieve a list of all actors, along with the titles of the films they appear in
+
+<img src="Code_Output/ACTOR_N_APPEARANCE.PNG" />&nbsp;
+
+29. Retrieve a list of distinct film titles and their descriptions currently available in the inventory at Store 2
+
+<img src="Code_Output/EXPANSION.PNG" />&nbsp;
+
+30. Retrieve a unified list of all staff and advisor names, including a column indicating their role as either 'Staff' or 'Advisor'
+
+<img src="Code_Output/CONFERENCE_LIST.PNG" />&nbsp;
+
 
    
 
