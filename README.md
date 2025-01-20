@@ -179,30 +179,34 @@ The database contains the following tables:
 ## Insights and Conclusions
 
 1.**Customer Behavior**
-Top Customers: A small percentage of customers contribute significantly to revenue, highlighting the importance of customer retention strategies for this segment.
 
-Inactive Customers: Identified a noticeable portion of inactive customers, suggesting the need for re-engagement campaigns to increase activity levels.
+**Top Customers**: A small percentage of customers contribute significantly to revenue, highlighting the importance of customer retention strategies for this segment.
+
+**Inactive Customers**: Identified a noticeable portion of inactive customers, suggesting the need for re-engagement campaigns to increase activity levels.
 
 2.**Movie Performance**
 
-Popular Genres: Action and Comedy emerged as the most rented genres, indicating their high demand among customers.
+**Popular Genres**: Action and Comedy emerged as the most rented genres, indicating their high demand among customers.
 
-Revenue Drivers: High-rated movies with special features contributed significantly to revenue, emphasizing the importance of maintaining a quality selection.
+**Revenue Drivers**: High-rated movies with special features contributed significantly to revenue, emphasizing the importance of maintaining a quality selection.
 
 3.**Revenue Insights**
-Peak Revenue Periods: Rental activity peaked during weekends, offering opportunities for targeted promotions and events.
 
-Late Fees: A substantial portion of revenue came from late fees, signaling a need to balance fee structures to avoid customer dissatisfaction while maintaining profitability.
+**Peak Revenue Periods**: Rental activity peaked during weekends, offering opportunities for targeted promotions and events.
+
+**Late Fees**: A substantial portion of revenue came from late fees, signaling a need to balance fee structures to avoid customer dissatisfaction while maintaining profitability.
 
 4.**Inventory Management**
-Low Turnover Titles: Some movies had consistently low rental rates, suggesting they may need price adjustments or removal from inventory.
 
-Optimized Stocking: Branches with optimized inventory turnover performed better, highlighting the value of data-driven stocking strategies.
+**Low Turnover Titles**: Some movies had consistently low rental rates, suggesting they may need price adjustments or removal from inventory.
+
+**Optimized Stocking**: Branches with optimized inventory turnover performed better, highlighting the value of data-driven stocking strategies.
 
 5.**Operational Efficiency**
-Branch Comparison: Identified high-performing branches with better customer engagement and inventory utilization. Underperforming branches may benefit from targeted management interventions.
 
-Peak Times: The busiest rental periods aligned with evenings and weekends, suggesting staffing adjustments during these times to improve customer experience.
+**Branch Comparison**: Identified high-performing branches with better customer engagement and inventory utilization. Underperforming branches may benefit from targeted management interventions.
+
+**Peak Times**: The busiest rental periods aligned with evenings and weekends, suggesting staffing adjustments during these times to improve customer experience.
 
 
 ## Key Recommendations
